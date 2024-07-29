@@ -1,16 +1,26 @@
-import styles from './style'
+import styles from "./style";
 
-import { Navbar, Hero, Billing, Btn, CTA, Clients, Feedback, Testimonials, Stats, GetStarted, Business, Footer, CardDeal } from './components'
+import {
+  Navbar,
+  Hero,
+  Billing,
+  CTA,
+  Clients,
+  Testimonials,
+  Stats,
+  Business,
+  Footer,
+  CardDeal,
+} from "./components";
 
 const App = () => {
   return (
-    <div className='bg-primary min-h-screen w-full text-white overflow-hidden'>
+    <div className="bg-primary min-h-screen w-full text-white overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
       </div>
-
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
@@ -18,22 +28,20 @@ const App = () => {
         </div>
       </div>
 
-
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Business />
           <Billing />
-          <CardDeal /> 
+          <CardDeal />
           <Testimonials />
           <Clients />
           <CTA />
           <Footer />
         </div>
       </div>
+    </div>
+  );
+};
 
-    </div >
-  )
-}
-
-export default App
+export default App;
